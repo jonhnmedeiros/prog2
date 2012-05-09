@@ -6,6 +6,7 @@ public class Pessoa {
 
     private String nomePessoa;
     private Universidade universidade;
+    private Departamento departamento;
 
     public String getNomePessoa() {
         return nomePessoa;
@@ -19,13 +20,23 @@ public class Pessoa {
         this.universidade = universidade;
     }
     
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
+    }
+    
+    
+    
     public void mostrar() {
         System.out.println("Nome: " + this.nomePessoa);
         if (this.universidade != null) {
             System.out.println("Universidade: " + this.universidade.getNome());
         }
+        
+        if (this.departamento != null) {
+            System.out.println("Departamento: " + this.departamento.getNomeDepartamento());
+        }
+        
     }
 
-    public Pessoa() {
-    }
+    
 }
