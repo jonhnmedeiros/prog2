@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class Universidade {
 
-    String nomeUniversidade;
+    private String nomeUniversidade;
     private List<Departamento> departamentos = new ArrayList(); 
 
     public String getNome() {
@@ -26,6 +26,12 @@ public class Universidade {
     public List<Departamento> getDepartamentos(){
         return this.departamentos;
     }
+    
+    public void listaDepartamentos () {
+        for (int i=0; i<departamentos.size(); i++) {
+            System.out.println(departamentos.get(i).getNomeDepartamento());
+        }
 
+    }
     
 }
