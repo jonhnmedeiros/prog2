@@ -1,3 +1,8 @@
+/**
+ *
+ * @author jonathan
+ */
+
 public class Complexo {
     protected float real,imag;
     

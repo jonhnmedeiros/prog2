@@ -1,3 +1,8 @@
+/**
+ *
+ * @author jonathan
+ */
+
 public class Real extends Complexo {
     
     public Real(float r) {
