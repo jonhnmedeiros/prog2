@@ -1,3 +1,8 @@
+/**
+ *
+ * @author jonathan
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,7 +11,7 @@ public class ListaDeCompras {
     
     public void adicionarItem(Item i){
         if (this.listaItem == null) {
-            this.listaItem = new ArrayList<>();
+            this.listaItem = new ArrayList<Item>();
         }
         this.listaItem.add(i);
     }
@@ -14,7 +19,7 @@ public class ListaDeCompras {
     public void removerItem(Item i) {
         if (this.listaItem != null) {
             this.listaItem.remove(i);
-        }
+        } 
     }
                                                                                                                                                                     
     public void imprimirLista() {

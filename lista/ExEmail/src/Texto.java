@@ -1,6 +1,10 @@
+/**
+ *
+ * @author jonathan
+ */
 
 public class Texto {
-    private String corpo;
+    private String corpo = "";
     
     public String getTexto() {
         return corpo;

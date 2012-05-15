@@ -1,3 +1,7 @@
+/**
+ *
+ * @author jonathan
+ */
 
 public class Assunto {
     private String texto;

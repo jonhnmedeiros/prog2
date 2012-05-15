@@ -1,6 +1,9 @@
+/**
+ *
+ * @author jonathan
+ */
 
 import java.util.Scanner;
-
 
 public class ExEmail {
 

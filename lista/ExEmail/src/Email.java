@@ -1,3 +1,7 @@
+/**
+ *
+ * @author jonathan
+ */
 
 public class Email {
     private Assunto ass = new Assunto();

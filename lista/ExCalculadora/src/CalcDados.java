@@ -1,13 +1,17 @@
 /**
  *
- * @author Johnny
+ * @author jonathan
  */
+
 public class CalcDados {
     private double [] operando;
     private char operacao;
     
     public void setOperando(int i, double valor) {
-        operando[i] = valor;  
+        if (operando == null) {
+            operando = new double[2];
+        }
+        operando[i] = valor;
     }
     
     public double getOperando (int i) {

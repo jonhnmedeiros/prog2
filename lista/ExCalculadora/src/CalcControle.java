@@ -1,7 +1,8 @@
 /**
  *
- * @author Johnny
+ * @author jonathan
  */
+
 public class CalcControle {
     
     public void executar() {
@@ -12,22 +13,25 @@ public class CalcControle {
         // Seta o operando 1
         dados.setOperando(0, inter.recebeOperando());
         
-        // Seta o operando 2
-        dados.setOperando(1, inter.recebeOperando());
+        while (dados.getOperacao() != 's') {
+            // Seta a operação
+            dados.setOperacao(inter.recebeOperacao());
+
+            if(dados.getOperacao() == 's'){
+                System.exit(0);
+            }
+
+            // Seta o operando 2
+            dados.setOperando(1, inter.recebeOperando());            
+
+            // Mostra o resultado atráve da classe CalcInterface
+            inter.mostraResultado(opera(dados.getOperando(0),dados.getOperando(1),dados.getOperacao()));
+
+            // Gravado o resultado no operando 1
+            dados.setOperando(0,opera(dados.getOperando(0),dados.getOperando(1),dados.getOperacao()));
+        }
+
         
-        // Seta a operação
-        dados.setOperacao(inter.recebeOperacao());
-        
-        // Caso o usuário digitar s o programa irá sair
-        if (dados.getOperacao() == 's') {
-            System.exit(0);
-        } 
-        
-        // Mostra o resultado atráve da classe CalcInterface
-        inter.mostraResultado(opera(dados.getOperando(0),dados.getOperando(1),dados.getOperacao()));
-        
-        // Gravado o resultado no operando 1
-        dados.setOperando(1,opera(dados.getOperando(0),dados.getOperando(1),dados.getOperacao()));
             
     }
    

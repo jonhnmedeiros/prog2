@@ -1,11 +1,13 @@
 /**
  *
- * @author Johnny
+ * @author jonathan
  */
+
 public class ExCalculadora {
 
     public static void main(String[] args) {
         CalcControle calculadora = new CalcControle();
+
         
         calculadora.executar();
     }
